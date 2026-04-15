@@ -21,19 +21,6 @@ const RevealText = ({ children, delay = 0, direction = 'up' }) => {
   );
 };
 
-const RevealCard = ({ children, delay = 0 }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, delay, ease: "easeOut" }}
-    >
-      {children}
-    </motion.div>
-  );
-};
-
 const styles = {
   navbar: {
     position: 'fixed',
@@ -220,62 +207,6 @@ const navItems = [
   { label: 'Projects', href: '#portfolio' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
-];
-
-const competencies = [
-  {
-    title: 'Cross-Platform Excellence',
-    description: 'Native-grade performance using Flutter and React Native. I build unified codebases that scale across iOS, Android, and Web without compromising on UX details.',
-    tags: ['Flutter', 'React Native', 'Dart'],
-    icon: '📱',
-    wide: true,
-  },
-  {
-    title: 'On-Device Intelligence',
-    description: 'Integrating CoreML, TensorFlow Lite, and LLMs directly into mobile workflows for privacy-first AI experiences.',
-    tags: ['AI/ML', 'TensorFlow', 'CoreML'],
-    icon: '🧠',
-    featured: true,
-  },
-  {
-    title: 'Cloud Architect',
-    description: 'Robust backend integration using Node.js and Firebase, optimized for real-time data sync and global scalability.',
-    tags: ['Node.js', 'Firebase', 'Cloud'],
-    icon: '☁️',
-  },
-  {
-    title: 'UI/UX Driven Development',
-    description: 'Every project follows a design-first methodology focusing on the Precision Architect philosophy.',
-    tags: ['Figma', 'Design', 'UI/UX'],
-    icon: '🎨',
-    wide: true,
-  },
-];
-
-const timeline = [
-  {
-    period: '2026 - Present',
-    title: 'Senior Mobile Systems Architect',
-    description: 'Leading the development of AI-driven healthcare applications, focusing on real-time biometric analysis and private LLM deployments on mobile hardware.',
-  },
-  {
-    period: '2022 - 2026',
-    title: 'Full-Stack Developer (FinTech)',
-    description: 'Engineered secure, high-transaction mobile wallets using React Native and encrypted GraphQL endpoints.',
-  },
-];
-
-const projects = [
-  {
-    title: 'NeuralCapture AI',
-    description: 'Real-time object recognition using TFLite.',
-    tags: ['Python', 'TensorFlow', 'OpenCV'],
-  },
-  {
-    title: 'EtherFlow Wallet',
-    description: 'Multi-chain crypto management in React Native.',
-    tags: ['React Native', 'Blockchain', 'FinTech'],
-  },
 ];
 
 function App() {
