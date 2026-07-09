@@ -1,16 +1,40 @@
-# React + Vite
+# Portfolio — Abimanyu Rajasekar
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio showcasing projects, skills, and experience as a Front-End Engineer.
 
-Currently, two official plugins are available:
+## Sections
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Hero** — Name, tagline, tech badges, avatar with frame corners and orbit dots
+- **About** — Background, stats, download resume
+- **Skills** — 6 category cards: Front-End, Backend, AI/LLM, Database, Mobile, Dev Env
+- **Projects** — Featured projects with image slideshow + lightbox
+- **Experience** — Timeline layout for work history
+- **Contact** — 2-column form card with social links
+- **Footer** — Copyright and credit
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Vite** + **React** (JSX)
+- All styles in a single `index.css` using CSS custom properties
+- Fluid `clamp()` typography and spacing — scales progressively from mobile → desktop
+- `ScrollReveal` component for fade-in/slide-up on scroll
+- `ParticlesCanvas` for background particle effect
 
-## Expanding the Oxlint configuration
+## Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Dark theme with accent colors pulled from CSS variables (`--c1` through `--c6`). Full-width fluid layout with no rigid `max-width` breakpoints — content grows with viewport using `clamp()` and percentage widths.
+
+Original design reference: `/home/spix/portfolio_fixed/style.css`
+
+## Getting Started
+
+```bash
+npm install
+npm run dev     # dev server
+npm run build   # production build
+npm run preview # preview build
+```
+
+## Deploy
+
+Build outputs to `dist/`. Deploy the `dist/` folder to any static host (Vercel, Netlify, GitHub Pages).
