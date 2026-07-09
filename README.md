@@ -1,4 +1,4 @@
-# Portfolio — Abimanyu Rajasekar
+# Portfolio — Abimanyu A
 
 Personal portfolio showcasing projects, skills, and experience as a Front-End Engineer.
 
