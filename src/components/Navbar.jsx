@@ -102,7 +102,7 @@ export default function Navbar() {
           </li>
           <li role="none">
             <a
-              href="/assets/resume/Abimanyu_Resume_FrontEnd.pdf"
+              href="/assets/resume/abimanyu-resume.pdf"
               target="_blank"
               rel="noopener"
               className="nav-cta"
